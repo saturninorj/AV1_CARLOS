@@ -1,0 +1,242 @@
+<!DOCTYPE html>        <!-- CARLOS JEFFERSON SATURNINO SANTOS - MATRICULA 1921312022 --> 
+<html lang="eng">
+<head>
+    <title>Construção - AV1</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="meu_estilo.css" rel="stylesheet" type="text/css" media="all">
+    <script src="jquery.js"></script>
+	<script src="jquery-input.js"></script>
+</head>
+<body>
+    <header><h1> AgencY - We build Apps </h1></header>
+    <nav>
+        <ul>
+        <li> <a href="#about"> Story </a> </li>
+        <li> <a href=""> Home </a> </li>
+        <li> <a href=""> Work </a> </li>
+        <li> <a href="#location"> Team </a> </li>
+        <li> <a href="#envio"> Contact </a> </li>
+        </ul>      
+    </nav>
+<section id="intro">
+    <header>
+        <h2>   <img src="img/logo.png">  </h2>
+        <p align="justify">
+        
+        </p>
+        <img src="img/avatar.png">
+    </header>
+</section>
+
+<div id="content">
+
+<div id="maincontent">
+
+<section>
+    <article>
+        <h2>Here’s a collection of our latest app builds.
+            Want us to work on your project?</h2>
+
+        <p> <a href=""> DailyFeed </a> </p>
+
+
+        <img src="img/slide-dailyFeed.png">
+
+        <p> Your number one podcast app </p>
+
+
+
+
+        <p> <a href=""> ChitChat </a> </p>
+
+
+        <img src="img/slide-chitChat.png">
+        
+        <p> The worldest easiest to use cross device chat app </p>
+
+
+
+
+        <p> <a href=""> MixTape </a> </p>
+
+        
+        <img src="img/slide-mixTape.png">
+
+        <p> An app to search, create and share mixtapes </p>
+
+
+
+        
+        <p> <a href=""> KITT </a> </p>
+
+        <img src="img/slide-kitt.png">
+
+
+        <p> Turn your car into KITT from Knight Rider </p>
+
+
+    </article>
+</section>
+<section id="location">
+    <h2> Meet the Team - Location: </h2>
+  
+    <article>
+        <header>
+            <p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d14730.881304227394!2d-43.24247700000001!3d-22.626916650000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1619271675752!5m2!1spt-BR!2sbr" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> </p>
+        </header>
+    </article>
+
+</section>
+<section id="envio">
+   <article>
+    <form method="post">
+        <h3 style="text-align: center;"> CONTACT US <br></br> </h3>
+            <p>
+                <label for="name"> Name: </label>
+                <input name="name" id="name" type="text" required>
+            </p>
+            
+            <p>
+                <label for="phone"> Phone:&nbsp </label>
+                <input name="name" id="phone"type="text" required>
+            </p>
+
+            <p>
+                <label for="address"> Adress: </label>
+                <input name="name" id="adress"type="text" required>
+            </p>
+
+            <p>
+                <label for="email"> E-mail: </label>
+                <input name="name" id="email"type="text" required>
+            </p>
+
+            <p>
+                <label for="website"> Github/Linkedin: </label>
+                <input name="name" id="website" type="text" required>
+            </p>
+
+            <p>
+                <label for="comment"> Comment: </label>
+                <textarea name="comment" id="comment" required> </textarea>
+            </p>
+
+            <p>
+                <input id="ptn" type="submit" value="Submit" />
+                
+
+                <input style="margin: 0 15px;" id="btn" name="btn" type="button" value="Cancel" onclick="cancel();" data-link="" />
+
+            </p>
+            <script>
+                jQuery(function($){$("#phone").mask("(99)9999‐9999");});
+
+                function cancel() {
+                    var ask = confirm("Are you sure you want to cancel?");
+                
+                    if (ask === true) {
+                        self.location = document.getElementById("btn").getAttribute("data-link");
+                    }
+                }
+            </script>
+            
+    </form>
+  </article>
+</section>
+</div>
+<aside>
+    <section>
+        <h3> Ecosystem </h3>
+        <ul>
+            <li> <a href=""> Marketplace </a>
+            <li> <a href=""> Templates </a>
+            <li> <a href=""> Plugins </a>
+            <li> <a href=""> Bootcamps </a>
+            <li> <a href=""> Coaching </a>
+        </ul>        
+    </section>
+
+    <section>
+        <h3> Products </h3>
+        <ul>
+            <li> <a href=""> For IOS </a>
+            <il> <a href=""> For Android </a>
+            <li> <a href=""> Integrations </a>
+            <li> <a href=""> Releases </a>
+            <li> <a href=""> Security </a>
+        </ul>        
+    </section>
+
+    <section>
+        <h3> Birthday Gift </h3>
+        <button onClick=gift()>Attention</button>
+        <p id="att"></p>
+        <script>
+            function gift()
+            {
+              var x=prompt("Type your birthday code")
+              alert("Your number code is " + x + " " + ". We have a beautiful gift for you. Congratulations!")  
+            }
+        </script>
+    </section>
+</aside>
+</div>
+<footer>
+    <div>
+        <section id="about">
+            <h3> Our story </h3>
+            <p> With our collective 20 years of experience in this field, we’ve got the answer that works for every business. 
+                We have created enough apps across so many industries to know what works for you and what doesn’t. 
+                We have made one of the best Fitness Centers run perfectly with minimum hiccups during the pandemic days. We have made retail houses still carry out their business with online clients. 
+                We have seen real estate businesses still float in the market and still get leads from time to time because of the engine that we had built on their backend.
+                Our Devs have helped small and medium-sized businesses also get and nurture local clients even during troubled times. 
+            </p>
+        </section>
+        
+    <section id="discover">
+        <h3> Discover </h3>
+        <ul>
+            <li> <a href=""> Features </a>
+            <il> <a href=""> Showcase </a>
+            <li> <a href=""> Pricing </a>
+            <li> <a href=""> How to build </a>
+            <li> <a href=""> FAQ </a>
+        </ul>        
+    </section>
+
+    
+    <section id="community">
+        <h3> Community </h3>
+        <ul>
+            <li> <a href=""> Forum </a>
+            <il> <a href=""> Blog </a>
+            <li> <a href=""> inclusion </a>
+            <li> <a href=""> Podcast </a>
+            <li> <a href=""> Twiter </a>
+            <li> <a href=""> Facebook </a>
+            <li> <a href=""> Youtube </a>
+    
+        </ul>        
+    </section>
+
+        
+    <section id="company">
+        <h3> Company </h3>
+        <ul>
+            <li> <a href=""> Brand guidelines </a>
+            <il> <a href=""> Presskit </a>
+            <li> <a href=""> Support </a>
+            <li> <a href=""> Newsroom </a>
+            <li> <a href=""> Partner Program </a>
+            <li> <a href=""> Status </a>
+            <li> <a href=""> Docs </a>
+    
+        </ul>        
+    </section>
+    </div>
+</footer>
+
+</body>
+</html>
